@@ -1,10 +1,14 @@
 <script>
-  let count = $state(0)
-  const increment = () => {
-    count += 1
-  }
+    let count = 0;
+
+    function handleClick(event,stepSize){
+        console.log(event)  
+        count+=stepSize
+    }
 </script>
 
-<button onclick={increment}>
-  count is {count}
-</button>
+<div>
+    <button on:click={()=> {count = count + 1}}>{count}</button>
+    <button on:click={(event) => handleClick(event,5)}>{count}</button>
+    
+</div>

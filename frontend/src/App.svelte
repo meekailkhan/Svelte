@@ -1,6 +1,7 @@
 <script>
   import AttributeBinding from "./lib/AttributeBinding.svelte";
   import BindHtml from "./lib/BindHtml.svelte";
+  import Display from "./lib/component/Display.svelte";
   import ComponentA from "./lib/ComponentA.svelte";
   import ConditionRedr from "./lib/ConditionRedr.svelte";
   import ConditionRende from "./lib/ConditionRende.svelte";
@@ -39,7 +40,8 @@
   <!-- <OnMount /> -->
   <!-- <ThisBinding /> -->
   <!-- <DynamicCom /> -->
-  <Module />
+  <!-- <Module /> -->
+  <Display />
 
 
 </main>
